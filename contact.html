@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap//bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font/css/all.css">
+    <title>Contact web</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#product">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Other services
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="index.html#feartures">Feartures</a>
+                      <a class="dropdown-item" href="index.html#carousel">The memories</a>
+                    </div>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="contact-section">
+        <div class="container-fluid">
+            <h1>Contact Information</h1>
+            <hr />
+            <form name = "myForm" onsubmit = "return(validate());" id="contactForm" action="javascript:void(0);" method="get"><input type="hidden" class="form-control" name="Introduction" value="This email was sent from www.awebsite.com" /><input type="hidden" class="form-control" name="subject" value="Awebsite.com Contact Form" /><input type="hidden" class="form-control"
+                    name="to" value="email@awebsite.com" />
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div id="successfail"></div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-12 col-md-6" id="message">
+                        <h2 class="h4"><i class="fa fa-envelope"></i> Contact Us<small><small class="required-input"> (*required)</small></small>
+                        </h2>
+                        <div class="form-group"><label for="from-name">Name</label><span class="required-input">*</span>
+                            <div class="input-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user"></i></span></div><input type="text" class="form-control" id="from-name" name="name" required placeholder="Full Name" required /></div>
+                        </div>
+                        <div class="form-group"><label for="from-email">Email</label><span class="required-input">*</span>
+                            <div class="input-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-envelope"></i></span></div><input type="email" class="form-control" id="from-email" name="email" required placeholder="Email Address"  required/></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                <div class="form-group"><label for="from-phone">Phone</label><span class="required-input">*</span>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone"></i></span></div><input type="text" class="form-control" id="from-phone" name="phone" required placeholder="Primary Phone" required /></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                                <div class="form-group"><label for="from-calltime">Best Time to Call</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></div><select class="form-control" id="from-calltime" name="call time"><optgroup label="Best Time to Call"><option value="Morning" selected>Morning</option><option value="Afternoon">Afternoon</option><option value="Evening">Evening</option></optgroup></select></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group"><label for="from-comments">Comments</label><textarea class="form-control" id="from-comments" name="comments" placeholder="Enter Comments" rows="5"></textarea></div>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col"><button class="btn btn-primary btn-block" type="reset"><i class="fa fa-undo"></i> Reset</button></div>
+                                <div class="col"><button class="btn btn-primary btn-block" onfocus="myFunction();" type="submit" >Submit <i class="fa fa-chevron-circle-right"></i></button></div>
+                            </div>
+                        </div>
+                        <hr class="d-flex d-md-none" />
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h2 class="h4"><i class="fa fa-location-arrow"></i> Locate Us</h2>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <div class="static-map"><a rel="noopener" href="https://www.google.com/maps/place/Daytona+International+Speedway/@29.1815062,-81.0744275,15z/data=!4m13!1m7!3m6!1s0x88e6d935da1cced3:0xa6b3e1bc0f2fc83a!2s1801+W+International+Speedway+Blvd,+Daytona+Beach,+FL+32114!3b1!8m2!3d29.187028!4d-81.0703076!3m4!1s0x88e6d949a4cb8593:0x1387c6c0b5c8cc97!8m2!3d29.1851681!4d-81.0705292"
+                                        target="_blank"><img class="img-fluid" src="./img/ggmap.png" alt="Google Map of Daytona International Speedway" /></a></div>
+                            </div>
+                            <div class="col-sm-6 col-md-12 col-lg-6">
+                                <h2 class="h4"><i class="fa fa-user"></i> Our Info</h2>
+                                <div><span><strong>Name</strong></span></div>
+                                <div><span>email@awebsite.com</span></div>
+                                <div><span>www.awebsite.com</span></div>
+                                <hr class="d-sm-none d-md-block d-lg-none" />
+                            </div>
+                            <div class="col-sm-6 col-md-12 col-lg-6">
+                                <h2 class="h4"><i class="fa fa-location-arrow"></i> Our Address</h2>
+                                <div><span><strong>Office Name</strong></span></div>
+                                <div><span>55 Icannot Dr</span></div>
+                                <div><span>Daytone Beach, FL 85150</span></div>
+                                <div>
+                                    <div><abbr data-toggle="tooltip" data-placement="top" title="Office Phone: 555-867-5309">O:</abbr> 555-867-5309</div>
+                                </div>
+                                <hr class="d-sm-none" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <p>
+                Copyright &copy; 2018 by COFFEEMAP
+            </p>
+            <div class="area-icon ml-xl-0">
+                <ul class="information m-lg-0">
+                    <li><i class="fas fa-map-marker-alt small-icon"> 73 C7B Pham Hung, Binh Chanh</i></li>
+                    <li><i class="fas fa-envelope small-icon">  benjaminAnh@gmail.com</i></li>
+                    <li><i class="fas fa-phone small-icon"> +840912223049</i></li>
+                </ul>
+                <ul class="social-icon">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter-square "></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-google-plus-square "></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script src="./bootstrap/bootstrap-4.5.2-dist/js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="./bootstrap/bootstrap-4.5.2-dist/js/popper.min.js"  crossorigin="anonymous"></script>
+    <script src="./bootstrap/bootstrap-4.5.2-dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap//bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font/css/all.css">
+    <title>Project of ours</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#product">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Other services
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="index.html#feartures">Feartures</a>
+                      <a class="dropdown-item" href="index.html#carousel">The memories</a>
+                    </div>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section id="project">
+        <div class="container-fluid p-0">
+            <h2>Ous projects</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="container">
+                        <img src="./img/thum1 (1).jpg" alt="Nature" class="image" style="width:100%" onclick="myFunction(this);">
+                        <div class="overlay">
+                            <div class="text">
+                                Welcome to you
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                  <img src="./img/thum1 (2).jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="./img/thum1 (3).jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="./img/thum1 (4).jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                  <img src="./img/thum1 (4).jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="./img/thum1 (5).jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="./img/thum1 (6).jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="./img/thum1 (6).jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+              
+              <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+              </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <p>
+                Copyright &copy; 2018 by COFFEEMAP
+            </p>
+            <div class="area-icon ml-xl-0">
+                <ul class="information m-lg-0">
+                    <li><i class="fas fa-map-marker-alt small-icon"> 73 C7B Pham Hung, Binh Chanh</i></li>
+                    <li><i class="fas fa-envelope small-icon">  benjaminAnh@gmail.com</i></li>
+                    <li><i class="fas fa-phone small-icon"> +840912223049</i></li>
+                </ul>
+                <ul class="social-icon">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter-square "></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-google-plus-square "></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/jquery.easing.min.js"></script>
+    <script src="./bootstrap/bootstrap-4.5.2-dist/js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="./bootstrap/bootstrap-4.5.2-dist/js/popper.min.js"  crossorigin="anonymous"></script>
+    <script src="./bootstrap/bootstrap-4.5.2-dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+</body>
+</html>
